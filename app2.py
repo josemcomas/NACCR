@@ -9,7 +9,7 @@ st.set_page_config(page_title="Corrosion Calc", page_icon="🧪")
 @st.cache_resource
 def load_and_train():
     # It will look for the csv in the same GitHub folder
-    df = pd.read_csv('cd2.csv')
+    df = pd.read_csv('corrosion_data.csv')
     X = df[['Sulfur', 'TAN', 'Temperature']].values
     y = df['CR'].values
     scaler = StandardScaler()
