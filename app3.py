@@ -38,7 +38,7 @@ def train_material_model(material_choice):
 st.title("🧪 Corrosion Rate Calculator")
 
 # 1. Material Selection
-material = st.selectbox("Select Material Type:", ["P9 Material", "P7 Material"])
+material = st.selectbox("Select Material Type:", ["Carbon Steel", "P9 Material"])
 
 # Load the specific model for the selection
 model, scaler = train_material_model(material)
