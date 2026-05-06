@@ -11,8 +11,8 @@ st.set_page_config(page_title="Multi-Material Corrosion Calc", page_icon="🧪")
 def train_material_model(material_choice):
     # Mapping selection to filenames
     files = {
-        "P9 Material": "cd2.csv",  # or P9_data.csv
-        "P7 Material": "P7_data.csv"
+        "Carbon Steel": "CSCR.csv",  # or P9_data.csv
+        "P9 Material": "P9CR.csv"
     }
     
     file_path = files[material_choice]
